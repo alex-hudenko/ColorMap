@@ -18,18 +18,12 @@ body {
   z-index: 0;
 }
 #toolbar {
-  width: 300px;
-  height: 150px;
   position: absolute;
   top: 0;
-  right: 20px;
-  background: #fff;
-  padding: 20px;
+  right: 0;
 }
 #toolbar #palette {
-  float: left;
-  margin-left: -50px;
-  margin-top: -20px;
+  float: right;
 }
 #toolbar #palette div.color {
   width: 30px;

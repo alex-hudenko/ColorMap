@@ -13,6 +13,5 @@ ColorMap.prototype.init = function(containerId, mapOptions) {
 ColorMap.prototype.applyStyles = function(styles) {
 	var customMapType = new google.maps.StyledMapType(styles, this.customStyledMapOptions);
 	this.map.mapTypes.set(this.customTypeName, customMapType);
-	this.map.setMapTypeId(this.customTypeName);
-	console.log(this.map);
+	this.map.setMapTypeId(this.customTypeName);	
 };

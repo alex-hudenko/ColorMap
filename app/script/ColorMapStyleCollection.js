@@ -38,7 +38,6 @@ ColorMapStyleCollection.prototype.setColor = function(feature, color) {
 	var saturation = Math.ceil(hsl.saturationL() * 200 - 100);	
 	var lightness = Math.ceil(hsl.lightness() * 200 - 100);
 	var indexes;
-	console.log(feature, color, hsl.hue(), hsl.saturationL(), hsl.lightness());
 	switch(feature) {
 		case 'administrative':
 			indexes = [0, 1, 2, 3, 4];
@@ -54,23 +53,18 @@ ColorMapStyleCollection.prototype.setColor = function(feature, color) {
 			break;		
 		case 'water':
 			indexes = [10];
-			// this.setHSLAtIndex(indexes, color, saturation, (lightness > -80 ? (lightness - 20) : lightness));
 			this.setHSLAtIndex(indexes, color, saturation, lightness);
 			break;
 		case 'labels':
 			indexes = [14];
-			// this.setHSLAtIndex(indexes, color, saturation, lightness);
 			this.styles[14].stylers[0].hue = color;
 			this.styles[14].stylers[1].saturation = 100;
 			this.styles[14].stylers[2].lightness = 20;
-			
-			// this.setHSLAtIndex(indexes, color, 50, 20);
 			break;
 	}	
 };
 
 ColorMapStyleCollection.prototype.setHSLAtIndex = function(indexes, hue, saturation, lightness) {
-	console.log(hue, saturation, lightness);
 	for (var i=0; i < indexes.length; i++) {			
 		this.styles[indexes[i]].stylers[0].hue = hue;
 		this.styles[indexes[i]].stylers[1].saturation = saturation;
@@ -88,7 +82,6 @@ ColorMapStyleCollection.prototype.createStyle = function(options) {
 		  { lightness: options.lightness ? options.lightness : 0 },
 		  { gamma: options.gamma ? options.gamma : 1 },
 		  { visibility: options.visibility ? options.visibility : 'on' }
-
 		]
 	};
 	return style;
