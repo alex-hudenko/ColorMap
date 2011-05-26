@@ -42,11 +42,11 @@ ColorMapStyleCollection.prototype.setColor = function(feature, color) {
 		case 'administrative':
 			indexes = [0, 1, 2, 3, 4];
 			this.setHSLAtIndex(indexes, color, saturation, lightness);
-			break;			
+			break;
 		case 'landscape':
 			indexes = [5, 6, 11, 12];
 			this.setHSLAtIndex(indexes, color, saturation, lightness);
-			break;			
+			break;
 		case 'road':
 			indexes = [7, 8, 9, 13];
 			this.setHSLAtIndex(indexes, color, saturation, lightness);

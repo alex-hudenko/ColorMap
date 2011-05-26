@@ -18,9 +18,9 @@ function init () {
 			for (var i=0; i < colors.length; i++) {				
 				$('#toolbar #palette #color-'+i).css({ background : colors[i] });				
 			};
-					
+			
 			styler.setColor('administrative', colors[3]);
-			styler.setColor('landscape', colors[0]);//0
+			styler.setColor('landscape', colors[0]);
 			styler.setColor('road', colors[1]);
 			styler.setColor('water', colors[4]);
 			styler.setColor('labels', colors[2]);
