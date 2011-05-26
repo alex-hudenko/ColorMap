@@ -1,8 +1,7 @@
 function init () {
 	
 	var map = new ColorMap();
-
-asdfas	
+	
 	map.init('map', {
     zoom: 7,
  		// disableDefaultUI: true,
