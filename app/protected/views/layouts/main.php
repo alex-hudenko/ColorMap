@@ -16,7 +16,7 @@
 		
 		<!-- libs -->
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/script/jquery-1.6.1.min.js"></script>
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/script/jquery-ui-1.8.12.custom.min.js"></script>
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/script/jquery.color.js"></script>
 		
@@ -24,7 +24,8 @@
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/script/ColorMap.js"></script>
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/script/ColorMapStyleCollection.js"></script>
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/script/map.js"></script>
-		
+		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/script/jquery.color-map.js"></script>
+
 	</head>
 	
 	<body lang="en">
